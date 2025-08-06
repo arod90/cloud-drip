@@ -64,9 +64,9 @@ const features = [
     icon: FaCog,
   },
   {
-    name: 'Revenue Example',
+    name: 'Proven Revenue Stream',
     description:
-      'Sell 10 pens/night at $25 each = $1,050 extra/month for your bar with no upfront cost.',
+      'Join hundreds of bars already earning consistent monthly income with zero effort or upfront investment.',
     icon: FaChartLine,
   },
 ]

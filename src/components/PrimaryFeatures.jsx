@@ -226,25 +226,25 @@ function EarnScreen(props) {
           {[
             {
               name: 'This Week',
-              price: '$250.00',
+              price: '⬆️ Strong',
               change: '10 units',
               color: '#16A34A',
             },
             {
               name: 'This Month',
-              price: '$1,050.00',
+              price: '🚀 Excellent',
               change: '42 units',
               color: '#0EA5E9',
             },
             {
               name: 'Last Month',
-              price: '$975.00',
+              price: '✅ Good',
               change: '39 units',
               color: '#8B5CF6',
             },
             {
               name: 'Total Revenue',
-              price: '$3,225.00',
+              price: '📈 Growing',
               change: '129 units',
               color: '#F59E0B',
             },

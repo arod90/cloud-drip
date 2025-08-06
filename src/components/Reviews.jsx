@@ -9,7 +9,7 @@ import { Container } from '@/components/Container'
 const reviews = [
   {
     title: 'Best decision we made.',
-    body: "Cloud Drip installed a machine at our sports bar 3 months ago. We're making an extra $800/month with zero effort on our part.",
+    body: "Cloud Drip installed a machine at our sports bar 3 months ago. We're seeing great monthly returns with zero effort on our part.",
     author: 'Mike, Downtown Sports Grill',
     rating: 5,
   },
@@ -57,7 +57,7 @@ const reviews = [
   },
   {
     title: 'Reliable income stream.',
-    body: 'Three machines across our venues now. Each one consistently generates $600-900 monthly profit.',
+    body: 'Three machines across our venues now. Each one consistently generates strong monthly revenue with no hassle.',
     author: 'Dave, Nightclub Chain Owner',
     rating: 5,
   },

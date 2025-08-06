@@ -32,14 +32,14 @@ const faqs = [
     {
       question: 'How much can we realistically earn?',
       answer:
-        "Most venues earn $600-1,200 per month depending on foot traffic. High-traffic nightlife venues can earn $1,500+ monthly. We'll give you projections based on your customer volume.",
+        'Most venues earn $600-1,200 per month depending on foot traffic. High-traffic nightlife venues can earn $1,500+ monthly. We&apos;ll give you projections based on your customer volume.',
     },
   ],
   [
     {
       question: 'What happens if we want to remove the machine?',
       answer:
-        "You can end the partnership anytime with 30 days notice. We'll remove the machine at no cost and settle any final profit sharing within the billing cycle.",
+        'You can end the partnership anytime with 30 days notice. We&apos;ll remove the machine at no cost and settle any final profit sharing within the billing cycle.',
     },
     {
       question: 'Do you provide support and training?',

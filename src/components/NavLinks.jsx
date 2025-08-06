@@ -17,7 +17,7 @@ export function NavLinks() {
     <Link
       key={label}
       href={href}
-      className="relative -mx-4 -my-3 rounded-lg px-4 py-3 text-base font-medium text-gray-700 transition-colors delay-150 hover:text-gray-900 hover:delay-0"
+      className="relative -mx-2 -my-1 rounded-lg px-4 py-2 text-sm font-medium text-white transition-colors delay-150 hover:text-cyan-300 hover:delay-0"
       onMouseEnter={() => {
         if (timeoutRef.current) {
           window.clearTimeout(timeoutRef.current)
@@ -33,7 +33,7 @@ export function NavLinks() {
       <AnimatePresence>
         {hoveredIndex === index && (
           <motion.span
-            className="absolute inset-0 rounded-lg bg-gray-100/80"
+            className="absolute inset-0 rounded-lg border border-cyan-500/30 bg-gradient-to-r from-cyan-500/20 to-blue-500/20"
             layoutId="hoverBackground"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 0.15 } }}

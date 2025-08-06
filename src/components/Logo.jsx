@@ -18,7 +18,7 @@ export function Logo(props) {
     <Image
       src={cloudDripLogo}
       alt="Cloud Drip"
-      className="h-12 w-auto"
+      className="h-12 w-auto scale-125"
       {...props}
     />
   )

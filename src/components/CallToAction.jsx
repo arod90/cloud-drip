@@ -16,8 +16,8 @@ export function CallToAction() {
             Want a Vape Vending Machine in Your Bar?
           </h2>
           <p className="mt-4 text-lg text-gray-300">
-            Fill out the form below and we'll get in touch to discuss how Cloud
-            Drip can boost your venue's revenue.
+            Fill out the form below and we&apos;ll get in touch to discuss how
+            Cloud Drip can boost your venue&apos;s revenue.
           </p>
           <form className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
             <div>

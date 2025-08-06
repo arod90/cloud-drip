@@ -298,60 +298,62 @@ function ProductSlider() {
 
       {/* Mobile Slider */}
       <div className="lg:hidden">
-        <div
-          ref={slideContainerRef}
-          className="flex snap-x snap-mandatory gap-4 overflow-x-auto overscroll-x-contain scroll-smooth pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
-        >
-          {products.map((product, index) => (
-            <div
-              key={index}
-              ref={(ref) => {
-                if (ref) {
-                  slideRefs.current[index] = ref
-                }
-              }}
-              className="w-80 flex-none snap-center"
-            >
-              <div className="rounded-2xl bg-gray-50 p-4">
-                <div className="flex h-[300px] items-center justify-center">
-                  <Image
-                    src={product.image}
-                    alt={product.name}
-                    className="h-full w-auto object-contain"
-                  />
-                </div>
-                <div className="mt-4 text-center">
-                  <h3 className="text-lg font-semibold text-gray-900">
-                    {product.name}
-                  </h3>
-                  <p className="text-sm text-gray-600">{product.subtitle}</p>
-                  <p className="mt-2 text-sm text-gray-600">
-                    {product.description}
-                  </p>
+        <Container>
+          <div
+            ref={slideContainerRef}
+            className="flex snap-x snap-mandatory gap-4 overflow-x-auto overscroll-x-contain scroll-smooth pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          >
+            {products.map((product, index) => (
+              <div
+                key={index}
+                ref={(ref) => {
+                  if (ref) {
+                    slideRefs.current[index] = ref
+                  }
+                }}
+                className="w-full flex-none snap-center"
+              >
+                <div className="rounded-2xl bg-gray-50 p-4">
+                  <div className="flex h-[300px] items-center justify-center">
+                    <Image
+                      src={product.image}
+                      alt={product.name}
+                      className="h-full w-auto object-contain"
+                    />
+                  </div>
+                  <div className="mt-4 text-center">
+                    <h3 className="text-lg font-semibold text-gray-900">
+                      {product.name}
+                    </h3>
+                    <p className="text-sm text-gray-600">{product.subtitle}</p>
+                    <p className="mt-2 text-sm text-gray-600">
+                      {product.description}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
 
-        {/* Pagination dots */}
-        <div className="mt-6 flex justify-center gap-3">
-          {products.map((_, index) => (
-            <button
-              key={index}
-              className={`h-2 w-2 rounded-full transition-colors ${
-                index === activeProduct ? 'bg-cyan-500' : 'bg-gray-300'
-              }`}
-              onClick={() => {
-                slideRefs.current[index]?.scrollIntoView({
-                  behavior: 'smooth',
-                  block: 'nearest',
-                  inline: 'center',
-                })
-              }}
-            />
-          ))}
-        </div>
+          {/* Pagination dots */}
+          <div className="mt-6 flex justify-center gap-3">
+            {products.map((_, index) => (
+              <button
+                key={index}
+                className={`h-2 w-2 rounded-full transition-colors ${
+                  index === activeProduct ? 'bg-cyan-500' : 'bg-gray-300'
+                }`}
+                onClick={() => {
+                  slideRefs.current[index]?.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'nearest',
+                    inline: 'center',
+                  })
+                }}
+              />
+            ))}
+          </div>
+        </Container>
       </div>
     </div>
   )

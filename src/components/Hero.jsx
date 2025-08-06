@@ -106,7 +106,7 @@ export function Hero() {
               Vape Vending Solutions for Bars & Nightlife Venues
             </h1>
             <p className="mt-6 text-lg text-gray-600 sm:text-xl">
-              Boost Your Bar's Revenue — No Hassle, No Upfront Costs. We
+              Boost Your Bar&apos;s Revenue — No Hassle, No Upfront Costs. We
               install, stock, and maintain vape vending machines — you earn
               money from every sale.
             </p>
@@ -120,7 +120,7 @@ export function Hero() {
           </div>
           <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
             <BackgroundIllustration className="absolute top-4 left-1/2 h-[1026px] w-[1026px] -translate-x-1/3 mask-[linear-gradient(to_bottom,white_20%,transparent_75%)] stroke-gray-300/70 sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0" />
-            <div className="-mx-4 flex h-[500px] items-start justify-center px-9 pt-4 sm:mx-0 sm:h-[600px] lg:absolute lg:-inset-x-10 lg:-top-24 lg:-bottom-8 lg:h-auto lg:px-0 lg:pt-0 xl:-bottom-16">
+            <div className="relative z-10 -mx-4 flex h-[600px] items-start justify-center px-2 pt-4 sm:mx-0 sm:h-[700px] lg:absolute lg:-inset-x-10 lg:-top-24 lg:-bottom-8 lg:h-auto lg:px-0 lg:pt-0 xl:-bottom-16">
               <Image
                 src={slimTowerImage}
                 alt="Cloud Drip Vending Machine"

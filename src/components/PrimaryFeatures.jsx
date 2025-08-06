@@ -45,7 +45,7 @@ const features = [
   {
     name: 'We Restock',
     description:
-      'We handle all inventory management, restocking, maintenance, and compliance requirements. You focus on running your bar while we handle everything else.',
+      'We handle all inventory management, restocking, maintenance, and compliance.You focus on running your bar while we handle everything else.',
     icon: FaTruck,
     screen: RestockScreen,
   },
@@ -478,7 +478,7 @@ function FeaturesMobile() {
                 }}
                 className="w-80 flex-none snap-center"
               >
-                <div className="transform rounded-2xl bg-gray-800 p-6">
+                <div className="flex h-[200px] transform flex-col rounded-2xl bg-gray-800 p-6">
                   <div className="flex items-center gap-3">
                     <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-cyan-500">
                       <feature.icon className="h-5 w-5 text-white" />

@@ -40,6 +40,19 @@ function ChevronUpIcon(props) {
   )
 }
 
+function XIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
+      <path
+        d="M18 6L6 18M6 6l12 12"
+        strokeWidth={2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  )
+}
+
 function MobileNavLink(props) {
   return (
     <PopoverButton
@@ -56,24 +69,30 @@ export function Header() {
       <nav>
         <Container className="relative z-50">
           <div className="flex items-center justify-between">
-            {/* Combined Logo and Nav in single container */}
-            <div className="flex items-center gap-8 rounded-xl bg-gray-900 px-6 py-3">
+            {/* Desktop: Combined Logo and Nav in single container */}
+            <div className="hidden items-center gap-8 rounded-xl bg-gray-900 px-6 py-3 lg:flex">
               <Link href="/" aria-label="Home">
-                <Logo className="h-12 w-auto" />
+                <Logo />
               </Link>
               {/* Subtle divider */}
-              <div className="hidden h-8 w-px bg-gray-700 lg:block"></div>
-              <div className="hidden items-center gap-2 lg:flex">
+              <div className="h-8 w-px bg-gray-700"></div>
+              <div className="flex items-center gap-2">
                 <NavLinks />
               </div>
             </div>
-            {/* Mobile Menu Button with gray background */}
-            <div className="rounded-xl bg-gray-900 p-2 lg:hidden">
+
+            {/* Mobile: Logo without background */}
+            <Link href="/" aria-label="Home" className="lg:hidden">
+              <Logo className="mt-2 h-16 w-auto scale-[2.95] transform" />
+            </Link>
+
+            {/* Mobile Menu Button without background */}
+            <div className="lg:hidden">
               <Popover>
                 {({ open }) => (
                   <>
                     <PopoverButton
-                      className="relative z-10 inline-flex items-center rounded-lg stroke-white p-2 hover:bg-gray-800/50 hover:stroke-gray-300 focus:not-data-focus:outline-hidden active:stroke-white"
+                      className="relative z-10 inline-flex items-center rounded-lg stroke-gray-900 p-2 hover:bg-gray-100/20 hover:stroke-gray-700 focus:not-data-focus:outline-hidden active:stroke-gray-900"
                       aria-label="Toggle site navigation"
                     >
                       {({ open }) =>
@@ -105,9 +124,16 @@ export function Header() {
                               y: -32,
                               transition: { duration: 0.2 },
                             }}
-                            className="absolute inset-x-0 top-0 z-50 origin-top rounded-b-2xl bg-gray-800 px-6 pt-32 pb-6 shadow-2xl shadow-gray-900/20"
+                            className="absolute inset-x-0 top-0 z-50 origin-top rounded-b-2xl bg-gray-800 px-6 pt-6 pb-6 shadow-2xl shadow-gray-900/20"
                           >
-                            <div className="space-y-4">
+                            {/* Mobile Menu Header with Logo and Close Button */}
+                            <div className="flex items-center justify-between border-b border-gray-600 pb-6">
+                              <Logo />
+                              <PopoverButton className="inline-flex items-center rounded-lg stroke-white p-2 hover:bg-gray-700/50 hover:stroke-gray-300 focus:not-data-focus:outline-hidden active:stroke-white">
+                                <XIcon className="h-5 w-5" />
+                              </PopoverButton>
+                            </div>
+                            <div className="space-y-4 pt-6">
                               <MobileNavLink href="/#how-it-works">
                                 How It Works
                               </MobileNavLink>

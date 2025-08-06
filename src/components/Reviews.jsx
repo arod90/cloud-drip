@@ -9,7 +9,7 @@ import { Container } from '@/components/Container'
 const reviews = [
   {
     title: 'Best decision we made.',
-    body: 'Cloud Drip installed a machine at our sports bar 3 months ago. We're making an extra $800/month with zero effort on our part.',
+    body: "Cloud Drip installed a machine at our sports bar 3 months ago. We're making an extra $800/month with zero effort on our part.",
     author: 'Mike, Downtown Sports Grill',
     rating: 5,
   },
@@ -39,7 +39,7 @@ const reviews = [
   },
   {
     title: 'No maintenance headaches.',
-    body: 'They promised zero hassle and delivered. We don't even think about the machine - it just makes us money.',
+    body: "They promised zero hassle and delivered. We don't even think about the machine - it just makes us money.",
     author: 'Rachel, The Dive Bar',
     rating: 5,
   },

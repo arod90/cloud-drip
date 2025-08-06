@@ -106,9 +106,7 @@ export function Hero() {
               Vape Vending Solutions for Bars & Nightlife Venues
             </h1>
             <p className="mt-6 text-lg text-gray-600 sm:text-xl">
-              Boost Your Bar\'s Revenue — No Hassle, No Upfront Costs. We
-              install, stock, and maintain vape vending machines — you earn
-              money from every sale.
+              {`Boost Your Bar's Revenue — No Hassle, No Upfront Costs. We install, stock, and maintain vape vending machines — you earn money from every sale.`}
             </p>
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
               <Button href="#get-started">Request a Machine</Button>

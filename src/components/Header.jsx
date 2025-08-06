@@ -144,6 +144,9 @@ export function Header() {
                                 Reviews
                               </MobileNavLink>
                               <MobileNavLink href="/#faqs">FAQs</MobileNavLink>
+                              <MobileNavLink href="/#get-started">
+                                Contact Us
+                              </MobileNavLink>
                             </div>
                             {/* <div className="mt-8 flex flex-col gap-4">
                             <Button href="/login" variant="outline">

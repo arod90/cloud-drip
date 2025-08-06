@@ -121,13 +121,12 @@ export function CallToAction() {
           </form>
           <div className="mt-8 rounded-lg bg-gray-800/50 p-6 backdrop-blur-sm">
             <p className="text-sm text-gray-300">
-              <strong className="text-white">Questions?</strong> Contact Monica
-              Chaviano at{' '}
+              <strong className="text-white">Questions?</strong> Contact us at{' '}
               <a
-                href="tel:+13053421744"
+                href="mailto:clouddripllc@gmail.com"
                 className="text-cyan-400 transition-colors hover:text-cyan-300"
               >
-                (305) 342-1744
+                clouddripllc@gmail.com
               </a>
             </p>
           </div>
